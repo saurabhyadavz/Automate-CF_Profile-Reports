@@ -59,28 +59,39 @@ except IndexError:
 
 ## rank_name and rating and highest rating
 rank=page_soup.select('div.info span')
-rank_name=rank[0].text.strip()
-print("You are:",rank_name)
-rating=rank[1].text.strip()
-print("Your rating is:",rating)
-highest_rating=rank[4].text.strip()
-print("Your highest rating is:",highest_rating)
+try:
+	rank_name=rank[0]
+	print("You are:",rank_name.text.strip())
+except IndexError:
+	print("You are:No participation till now")
+
+try:
+	rating=rank[1]
+	print("Your rating is:",rating.text.strip())
+except IndexError:
+	print("Your rating is:No participation till now")
+
+try:
+	highest_rating=rank[4]
+	print("Your highest rating is:",highest_rating.text.strip())
+except IndexError:
+	print("You highest rating is:No participation till now")
 
 ##contribution
 
-contribution=rank[5].text.strip()
-print("Your Contribution:",contribution)
+contribution=page_soup.select('li span')
+print("Your Contribution:",contribution[0].text.strip())
 ## Friends
 
-Friends=page_soup.select('div.info li')
-list_friends=Friends[2].text.strip()
+friend=page_soup.find_all('li')
+list_friends=friend[41].text.strip()
 print(list_friends)
 ## registered
 
-registered=rank[7].text.strip()
+registered=contribution[2].text.strip()
 print("You were Registered:",registered)
 ##last visit
 
-last_visit=rank[6].text.strip()
+last_visit=contribution[1].text.strip()
 print("Your last visit on CF:",last_visit)
 #f.close()
