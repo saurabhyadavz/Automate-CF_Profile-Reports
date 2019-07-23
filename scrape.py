@@ -29,7 +29,7 @@ page_soup=soup(page_html,"html.parser")
 
 
 ##Creating file
-f= open("info.txt","w+")
+#f= open("info.txt","w+")
 
 ## User name
 user_name=page_soup.h1.text.strip()
@@ -37,14 +37,25 @@ print("Your User name:",user_name)
 ##City
 
 city=page_soup.select('div.main-info a')
-city_name=city[1].text.strip()
-print("City:",city_name)
-##Country
-country_name=city[2].text.strip()
-print("Country:",country_name)
-##Institute or organisation name
 
-organisation_name=city[3].text.strip()
+try:
+	data=city[1]
+	print("Your City:",city[1].text.strip())
+except IndexError:
+	print("You City:______")
+
+##Country
+try:
+	data=city[2]
+	print("Country:",data.text.strip())
+except IndexError:
+	print("Country:_______")
+##Institute or organisation name
+try:
+	data=city[3]
+	print("Organisation:",data.text.strip())
+except IndexError:
+	print("Organisation:________")
 
 ## rank_name and rating and highest rating
 rank=page_soup.select('div.info span')
@@ -72,4 +83,4 @@ print("You were Registered:",registered)
 
 last_visit=rank[6].text.strip()
 print("Your last visit on CF:",last_visit)
-f.close()
+#f.close()
