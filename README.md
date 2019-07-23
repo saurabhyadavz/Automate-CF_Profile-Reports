@@ -1,4 +1,4 @@
-# Automated-CF_Profile-Reports
+<h1 align = 'center'>Automated-CF_Profile-Reports</h1>
 
 ## About
 It helps in saving your Codeforces profile in a text file.
