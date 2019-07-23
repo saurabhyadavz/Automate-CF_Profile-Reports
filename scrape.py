@@ -77,21 +77,22 @@ try:
 except IndexError:
 	print("You highest rating is:No participation till now")
 
-##contribution
+c=page_soup.find_all('li')
 
-contribution=page_soup.select('li span')
-print("Your Contribution:",contribution[0].text.strip())
+##contribution
+contribution=c[41].span.text
+print("Your Contribution:",contribution)
+
 ## Friends
 
-friend=page_soup.find_all('li')
-list_friends=friend[41].text.strip()
-print(list_friends)
-## registered
+friend=c[42].text.strip()
+print(friend)
 
-registered=contribution[2].text.strip()
+ ## registered
+registered=c[44].span.text.strip()
 print("You were Registered:",registered)
-##last visit
 
-last_visit=contribution[1].text.strip()
+##last visit
+last_visit=c[43].span.text.strip()
 print("Your last visit on CF:",last_visit)
 #f.close()
