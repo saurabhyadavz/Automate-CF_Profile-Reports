@@ -12,6 +12,7 @@ It helps in saving your Codeforces profile in a text file.
 
 - `git clone https://github.com/saurabhshadow/Automated-CF_Profile-Reports.git`
 - `cd Automated-CF_Profile-Reports`
+- Install requirements :- `pip3 install -r requirements.txt`
 - Run `scrape.py`
 - Now, enter your Codeforces user name.
 
