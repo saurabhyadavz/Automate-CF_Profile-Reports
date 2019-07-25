@@ -17,5 +17,11 @@ It helps in saving your Codeforces profile in a text file.
 - Now, enter your Codeforces user name.
 
 
+## License
 
+[MIT License](LICENSE)
+
+---
+
+<p align="center"> Made with ❤ by <a href="https://github.com/saurabhshadow">Saurabh Yadav</a></p>
  
