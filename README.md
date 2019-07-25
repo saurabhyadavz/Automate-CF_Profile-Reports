@@ -16,6 +16,11 @@ It helps in saving your Codeforces profile in a text file.
 - Run `scrape.py`
 - Now, enter your Codeforces user name.
 
+## Get in touch
+---
+[<img src="https://image.flaticon.com/icons/svg/185/185964.svg" width="35" padding="10">](https://www.linkedin.com/in/saurabhshadow/)
+[<img src="https://image.flaticon.com/icons/svg/185/185985.svg" width="35" padding="10">](https://www.instagram.com/saurabhshadow/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="35" padding="10">](https://github.com/saurabhshadow)
 
 ## License
 
