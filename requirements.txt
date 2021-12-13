@@ -9,7 +9,7 @@ idna==2.8
 ipaddress==1.0.17
 keyring==10.6.0
 keyrings.alt==3.0
-lxml==4.3.4
+lxml==4.6.5
 pygobject==3.26.1
 pytz==2019.1
 requests==2.22.0
