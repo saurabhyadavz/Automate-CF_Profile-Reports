@@ -2,7 +2,7 @@ asn1crypto==0.24.0
 backports.functools-lru-cache==1.5
 beautifulsoup4==4.8.0
 bs4==0.0.1
-certifi==2019.6.16
+certifi==2022.12.7
 enum34==1.1.6
 html5lib==0.999999999
 idna==2.8
